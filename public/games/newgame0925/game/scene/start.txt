@@ -1,14 +1,33 @@
-; 初始场景，以及特效演示
-bgm:BGMを選択;
+;最初のコメント
+bgm:none;
 unlockBgm:s_Title.mp3 -name=雲を追いかけて;
-intro:你好|欢迎来到 WebGAL 的世界 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
-changeBg:bg.png -next;
-unlockCg:bg.png -name=良夜; // 解锁CG并赋予名称
+intro:メインテキスト|サブテキスト -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+changeBg:背景画像を選択 -next;
+unlockCg:bg.png -name=良夜;
 changeFigure:stand.png -left -next;
 setAnimation:enter-from-left -target=fig-left -next;
-WebGAL:欢迎使用 WebGAL！这是一款全新的网页端视觉小说引擎。 -v1.wav -fontSize=default;
+名前:設備からの説明です -v1.wav -fontSize=default;
 
 キャラクター名を空白のままにすると前の文から継承 -fontSize=default;
 bgm: BGMを選択;
 bgm: BGMを選択;
 unlockCg:;
+intro:;
+pixiPerform:snow;
+miniAvatar: アバターファイルを選択;
+intro:;
+キャラクター名を空白のままにすると前の文から継承;ダイアログ;
+changeBg: 背景画像を選択;
+changeFigure: 立ち絵ファイルを選択;
+setTextbox:hide;
+setTextbox:hide;
+setTextbox:hide;
+setTextbox:hide;
+end;
+end;
+end;
+unlockCg:;
+unlockCg:;
+unlockBgm:;
+choose: 選択肢を設定: シーンファイルを選択;
+choose: 選択肢を設定: シーンファイルを選択;
